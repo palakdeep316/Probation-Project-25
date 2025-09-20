@@ -1,0 +1,18 @@
+import numpy as np
+import random
+a=np.arange(1,21)
+b=np.arange(1,21)
+a=random.choices(a,k=10)
+b=random.choices(b,k=10)
+a=np.array(a)
+b=np.array(b)
+print(a,'\n',b)
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a**2)
+c=a.reshape(2,5)
+d=b.reshape(5,2)
+print(np.dot(c,d))
+print(np.sort(b))
